@@ -44,7 +44,7 @@ article {
   border-radius: 5px;
 }
 
-article li {
+ {
   margin: 1.5em;
 }
 
@@ -92,4 +92,33 @@ footer img {
 
 footer h1 {
   font-size: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    margin: 0;
+  }
+
+  nav,
+  header img {
+    width: 100%;
+  }
+
+  nav > ul {
+    justify-content: center;
+  }
+
+  article,
+  aside {
+    margin: 1em;
+  }
+
+  main {
+    width: 100%;
+    display: inline-block;
+  }
+
+  footer {
+    flex-direction: column;
+  }
 }
