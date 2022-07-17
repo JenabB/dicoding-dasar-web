@@ -35,15 +35,11 @@ for (const items of exp) {
   textPosition.innerHTML = items.position;
   const listContainer = document.createElement("li");
   listContainer.append(textCompany, textTime, textPosition);
-  //   textContainer.classList.add("container");
-  //   textContainer.append(textName);
   expContainer.append(listContainer);
 }
 
 for (const items of skills) {
   const textName = document.createElement("li");
   textName.innerHTML = items.name;
-  //   textContainer.classList.add("container");
-  //   textContainer.append(textName);
   skillsContainer.append(textName);
 }
